@@ -19,7 +19,7 @@ function data(){
        selectname.style.outlineColor = "red"
        return false;
     }
-    if(age === ""){
+     else if(age === ""){
         document.querySelector('#errorage').innerHTML = "please enter ur age";
         let selectage = document.querySelector('#age');
         selectage.style.borderColor = "red"
@@ -27,7 +27,7 @@ function data(){
         return false;
     }
 
-    if(mail === ""){
+   else if(mail === ""){
         document.querySelector('#errormail').innerHTML = "please enter ur mail";
         let selectage = document.querySelector('#mail');
         selectage.style.borderColor = "red"
@@ -35,7 +35,7 @@ function data(){
         return false;
     }
 
-    if(address === ""){
+   else if(address === ""){
         document.querySelector('#erroraddress').innerHTML = "please enter ur address";
         let selectage = document.querySelector('#address');
         selectage.style.borderColor = "red"
@@ -43,7 +43,7 @@ function data(){
         return false;
     }
 
-    if(no === ""){
+    else if(no === ""){
         document.querySelector('#errorno').innerHTML = "please enter ur no";
         let selectage = document.querySelector('#no');
         selectage.style.borderColor = "red"
@@ -51,11 +51,61 @@ function data(){
         return false;
     }
 
-    if(cpswd === ""){
+    else if(cpswd === ""){
         document.querySelector('#errorcpswd').innerHTML = "please enter ur cpswd";
         let selectage = document.querySelector('#cpswd');
         selectage.style.borderColor = "red"
         selectage.style.borderColor = "red"
         return false;
     }
+    //name
+    function s(){
+        let selectedinput = document.querySelector('#name');
+        let selecterrorname = document.querySelector('#errorname');
+        selecterrorname.innerHTML = "";
+        selectedinput.style.borderColor ="black";
+        selectedinput.style.outlineColor = "black";
+    
+    //age
+    
+        let selectedage = document.querySelector('#age');
+        let selecterrorage = document.querySelector('#errorage');
+        selecterrorage.innerHTML = "";
+        selectedage.style.borderColor ="black";
+        selectedage.style.outlineColor = "black";
+    
+     //mail
+    
+    let selectedmail= document.querySelector('#mail');
+    let selecterrormail = document.querySelector('#errormail');
+    selecterrormail.innerHTML = "";
+    selectedmail.style.borderColor ="black";
+    selectedmail.style.outlineColor = "black"; 
+    
+ 
+ //address
+    
+    let selectedaddress = document.querySelector('#address');
+    let selecterroraddress = document.querySelector('#erroraddress');
+    selecterroraddress.innerHTML = "";
+    selectedaddress.style.borderColor ="black";
+    selectedaddress.style.outlineColor = "black";
+
+ //no
+ 
+   let selectedno= document.querySelector('#no');
+   let selecterrorno = document.querySelector('#errorno');
+    selecterrorno.innerHTML = "";
+    selectedno.style.borderColor ="black";
+    selectedno.style.outlineColor = "black";
+ 
+ //cpswd
+ 
+    let selectedcpswd = document.querySelector('#cpswd');
+    let selecterrorcpswd = document.querySelector('#errorcpswd');
+    selecterrorcpswd.innerHTML = "";
+    selectedcpswd.style.borderColor ="black";
+     selectedcpswd.style.outlineColor = "black";
+}
+    
 }
