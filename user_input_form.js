@@ -107,5 +107,15 @@ function data(){
     selectedcpswd.style.borderColor ="black";
      selectedcpswd.style.outlineColor = "black";
 }
-    
 }
+
+function s(arg){
+    console.log(arg)
+    let selectedinput = document.querySelector(`#${arg}`);
+    console.log(selectedinput);
+    selectedinput.style.borderColor='black';
+    selectedinput.style.outlineColor = 'black';
+
+    document.querySelector(`#error${arg}`).innerHTML="";
+}
+    
