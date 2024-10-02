@@ -27,7 +27,7 @@ function data(){
         return false;
     }
 
-   else if(mail === ""){
+   else if(!(mail.includes('@')&& mail.includes(".com"))){
         document.querySelector('#errormail').innerHTML = "please enter ur mail";
         let selectage = document.querySelector('#mail');
         selectage.style.borderColor = "red"
@@ -43,13 +43,22 @@ function data(){
         return false;
     }
 
-    else if(no === ""){
-        document.querySelector('#errorno').innerHTML = "please enter ur no";
+    else if(no.length !== 10){
+        document.querySelector('#errorno').innerHTML = "please enter ur  10 digit no";
         let selectage = document.querySelector('#no');
         selectage.style.borderColor = "red"
         selectage.style.borderColor = "red"
         return false;
     }
+    else if(isNaN(no)){
+        document.querySelector('#errorno').innerHTML = "please enter int type no";
+        let selectage = document.querySelector('#no');
+        selectage.style.borderColor = "red"
+        selectage.style.borderColor = "red"
+        return false;
+    }
+
+    
 
     else if(cpswd === ""){
         document.querySelector('#errorcpswd').innerHTML = "please enter ur cpswd";
@@ -58,6 +67,7 @@ function data(){
         selectage.style.borderColor = "red"
         return false;
     }
+
     //name
     function s(){
         let selectedinput = document.querySelector('#name');
@@ -107,6 +117,7 @@ function data(){
     selectedcpswd.style.borderColor ="black";
      selectedcpswd.style.outlineColor = "black";
 }
+
 }
 
 function s(arg){
