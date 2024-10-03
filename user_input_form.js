@@ -5,12 +5,7 @@ function data(){
     let address = document.querySelector('#address').value;
     let no = document.querySelector('#no').value;
     let cpswd = document.querySelector('#cpswd').value;
-    console.log(name);
-    console.log(age);
-    console.log(mail);
-    console.log(address);
-    console.log(no);
-    console.log(cpswd);
+    console.log(name,age,mail,address,no,cpswd);
     if(name === ""){
        // window.alert("please enter ur name");
        document.querySelector('#errorname').innerHTML = "please enter ur name";
@@ -19,6 +14,7 @@ function data(){
        selectname.style.outlineColor = "red"
        return false;
     }
+
      else if(age === ""){
         document.querySelector('#errorage').innerHTML = "please enter ur age";
         let selectage = document.querySelector('#age');
@@ -67,9 +63,32 @@ function data(){
         selectage.style.borderColor = "red"
         return false;
     }
+    else if
+    (!(cpswd.match(/[1234567890]/)
+     && 
+     cpswd.match(/[!@#$%^&*_()-]/) 
+     && 
+     cpswd.match(/[qwertyuiopasdfghjklzxcvbnm]/) 
+     && 
+     cpswd.match(/[QWERTYUIOPASDFGHJKLZXCVBNM]/)))
+     {
+        document.querySelector('#errorcpswd').innerHTML = "password contains atleast 1 lower, upper,special and number";
+        let selectage = document.querySelector('#cpswd');
+        selectage.style.borderColor = "red"
+        selectage.style.borderColor = "red"
+        return false;
+    }
+    // else if (cpswd){
+    //     window.alert("password and confirm password not match");
+    //     document.querySelector('#cpswd').value = "";
+    //     document.querySelector('#cpswd').focus();
+    //     return false;
+    // }
+
+    }
 
     //name
-    function s(){
+    // function s(){
         let selectedinput = document.querySelector('#name');
         let selecterrorname = document.querySelector('#errorname');
         selecterrorname.innerHTML = "";
@@ -116,9 +135,9 @@ function data(){
     selecterrorcpswd.innerHTML = "";
     selectedcpswd.style.borderColor ="black";
      selectedcpswd.style.outlineColor = "black";
-}
 
-}
+
+
 
 function s(arg){
     console.log(arg)
