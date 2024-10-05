@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,13 +9,14 @@
             display:flex;
             justify-content: space-evenly;
             align-items: center;
-            width:300px;
-            box-shadow: 0px,0px,0px,;
+            width:400px;
+            box-shadow: 0px,0px,20px silver;
+            border-radius:10px;
         }
     </style>
 </head>
 <body>
-    <section id="card">
+     <section id="card">
         <div>
             <img src="./c:\Users\pragati\OneDrive\Pictures\andrey-zvyagintsev-RdUrPp0SmOQ-unsplash.jpg" alt="">
         </div>
@@ -27,7 +28,35 @@
             <h3>address</h3>
             <h3>image</h3>
         </div>
-    </section>
+    </section> -->
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #card{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 400px;
+            box-shadow: 0px 0px 20px 20px silver;
+            border-radius: 10px;
+        }
+
+        #card div img{
+            border-radius: 50%;
+            width: 100px;
+
+        }
+    </style>
+</head>
+<body>
+    <section id="card">
+        <div>
+            <img src="./c:\Users\pragati\OneDrive\Pictures\andrey-zvyagintsev-RdUrPp0SmOQ-unsplash.jpg" alt="">
+        </div>
     <form>
     <input type="text" id="name" placeholder="Enter your name">
     <input type="text"id="phone" placeholder="Enter your phone no.">
@@ -36,7 +65,8 @@
     <input type="text"id="address" placeholder="Enter your address">
     <input type="text"id="image" placeholder="Enter your image">
     </form>
+    <div id="output"></div>
     <script src="./template.js"></script>
     
 </body>
-</html>
+</html> 

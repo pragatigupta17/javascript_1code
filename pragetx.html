@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup with JavaScript</title>
+    <style>
+        /* Same styles as provided earlier */
+        .popup {
+            width: 500px;
+            background-color: #004f8b;
+            border-radius: 8px;
+            padding: 20px;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            position: relative;
+            display: none; /* Initially hidden */
+        }
+
+        .popup-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .header-button {
+            flex: 1;
+            margin: 5px;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            color: #004f8b;
+            border-radius: 25px;
+            text-align: center;
+            cursor: pointer;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .header-button:hover {
+            background-color: #e3f2fd;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        .subscribe-section {
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 8px;
+            color: #004f8b;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .subscribe-section input[type="email"] {
+            width: 80%;
+            padding: 10px;
+            border-radius: 20px;
+            border: 1px solid #004f8b;
+            margin: 10px 0;
+        }
+
+        .subscribe-section button {
+            background-color: #004f8b;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .subscribe-section button:hover {
+            background-color: #003660;
+        }
+
+        /* Open Button */
+        .open-popup-btn {
+            margin: 20px;
+            padding: 10px 20px;
+            background-color: #004f8b;
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .open-popup-btn:hover {
+            background-color: #003660;
+        }
+    </style>
+</head>
+<body>
+    <!-- Open Popup Button -->
+    <button class="open-popup-btn">Open Popup</button>
+
+    <!-- Popup Structure -->
+    <div class="popup" id="popup">
+        <!-- Close Button -->
+        <div class="close-btn" onclick="closePopup()">&times;</div>
+
+        <!-- Header Buttons -->
+        <div class="popup-header">
+            <a href="#" class="header-button" id="partnerBtn">Become a partner</a>
+            <a href="#" class="header-button" id="jobBtn">Looking for job?</a>
+            <a href="#" class="header-button" id="projectBtn">Inquiry for project</a>
+        </div>
+
+        <!-- Subscribe Section -->
+        <div class="subscribe-section">
+            <h3>Join us to know problems Web3.0 is solving around the world</h3>
+            <p>Keep up to date with latest blogs/articles from our experts</p>
+            <form onsubmit="subscribe(event)">
+                <input type="email" placeholder="Email address" id="email" required>
+                <button type="submit">Subscribe Now</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./pragetx.js"></script>
+</body>
+</html>
