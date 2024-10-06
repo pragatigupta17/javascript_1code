@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box to Circle</title>
+    <style>
+        
+        #box {
+            width: 560px;
+            height: 700px;
+            background-color: #3498db; 
+            transition: all 0.5s ease; 
+            margin: 50px;
+        }
+
+        /* Style for converting the box to a circle */
+        #box.circle {
+            border-radius: 50%; /* Makes it a circle */
+            width: 700px; /* Adjust width for a circle */
+            height: 700px; /* Adjust height for a circle */
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="box"></div>
+
+    <script src="mouse.js"></script>
+</body>
+</html>
