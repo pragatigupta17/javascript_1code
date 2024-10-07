@@ -21,5 +21,5 @@ function card(){
     let output=document.querySelector('#output').innerHTML=inputvalue;
     document.querySelector('form').style.display="none"
     print();
-    
+   return false; 
 }
