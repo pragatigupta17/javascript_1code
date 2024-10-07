@@ -18,7 +18,7 @@ function card(){
         <img src="${image}" alt="img not found">
     </div>
     </section>`
-    let output=document.querySelector('#output').innerHTML=inputvalue;
+    document.querySelector('#output').innerHTML=inputvalue;
     document.querySelector('form').style.display="none"
     print();
    return false; 
