@@ -1,7 +1,7 @@
 function calculateGST() {
-    // Get the user inputs
-    const amount = parseFloat(document.getElementById("amount").value);
-    const gstRate = parseFloat(document.getElementById("gstRate").value);
+    
+    const amount = parseInt(document.getElementById("amount").value);
+    const gstRate = parseInt(document.getElementById("gstRate").value);
 
     if (isNaN(amount) || isNaN(gstRate) || amount <= 0 || gstRate <= 0) {
         alert("Please enter valid numbers for amount and GST rate.");

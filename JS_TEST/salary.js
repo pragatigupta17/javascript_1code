@@ -1,5 +1,5 @@
 function calculateTax() {
-    const salary = parseFloat(document.getElementById("salary").value);
+    const salary = parseInt(document.getElementById("salary").value);
     let tax = 0;
 
 
