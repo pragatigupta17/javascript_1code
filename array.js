@@ -12,13 +12,13 @@ console.log(typeof(arr));
 console.log(arr2[0][5])
 for(let i = 0;i<arr.length;i++){
     console.log(i);
-    console.log(arr[i])
+    console.log(arr[i]) 
 };
 for(let i in arr){
-    //indexof array element
+    //indexof array element  to print index no
     console.log(i)
 }
 for(let i of arr){
-    //element of array
+    //element of array 
     console.log(i)
 }
