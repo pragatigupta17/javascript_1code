@@ -1,3 +1,4 @@
+// two types of storage --> 1) session storage- its just like virtual storage , 2) local- it is permanent storage
 //there are 4 types of function --> 1) setItem,2)getItem,3)removeItem,4)clear
 //data will not show on server if code,domain and protocal will changed or different
 // if key will same then data is override

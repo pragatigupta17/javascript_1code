@@ -1,20 +1,18 @@
 function save(){
-    let name = document.querySelector("#name").Value;
-    let age = document.querySelector("#age").value;
-    let mail= document.querySelector("#mail").value;
-    let address = document.querySelector("#address").value;
-    let no = document.querySelector("#no").value;
-   let cpswd = document.querySelector("#cpswd").value;
-   localStorage.setItem("name",name)
-   localStorage.setItem("age",age)
-   localStorage.setItem("mail",mail)
-   localStorage.setItem("address",address)
-   localStorage.setItem("no",no)
-   localStorage.setItem("cpswd",cpswd)
-   localStorage.getItem("name",name)
-   localStorage.getItem("age",age)
-   localStorage.getItem("mail",mail)
-   localStorage.getItem("address",address)
-   localStorage.getItem("no",no)
-   localStorage.getItem("cpswd",cpswd)
+    let ob={
+     name:document.querySelector("#name").value,
+     age:document.querySelector("#age").value,
+     mail:document.querySelector("#mail").value,
+     address:document.querySelector("#address").value,
+     no:document.querySelector("#no").value,
+    cpswd:document.querySelector("#cpswd").value,
+    }
+
+   localStorage.setItem("data",JSON.stringify(ob))
+
+
+
 }
+
+   let m=JSON.parse(localStorage.getItem("data"))
+   console.log(m);
